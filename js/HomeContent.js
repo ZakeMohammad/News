@@ -580,9 +580,9 @@ Data.forEach(data=>{
    <div class="position-relative banner-2" id="Adds">
                                                     <img loading="lazy" src=" https://zakimohammad2-001-site1.etempurl.com/Images/Adds/${data[4]}"  class=" w-100 rounded" alt="">
                                                     <div class="text-center ">
-                                                        <h6 class="mb-2">${data[3]}}</h6>
+                                                        <h6 class="mb-2">${data[3]}</h6>
                                                         <p class="text-dark mb-2"></p>
-                                                        <a target="_blank" href="${data[1]}}" class="btn btn-primary text-white px-4">Shop Now</a>
+                                                        <a target="_blank" href="${data[1]}}" class="btn btn-primary text-white px-4">Visit it</a>
                                                     </div>
                                                 </div>
     `;

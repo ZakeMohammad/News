@@ -94,6 +94,37 @@ document.addEventListener("DOMContentLoaded", function() {
         let NewsPagesNumber=1;
         let TrandingPagesNumber=1;
     
+        function closeMessage(el) {
+            el.classList.add('is-hidden');
+          }
+          
+          
+          function openMessage(el) {
+                el.classList.remove('is-hidden');
+          
+                if (!el.classList.contains('Message--red')) 
+                {
+                clearTimeout(timerId);
+                timerId = setTimeout(function() {
+               closeMessage(el);
+                }, 5000);
+              }
+          }
+          
+        
+        
+        timerId = setTimeout(function() {
+            closeMessage(document.getElementById('js-timer'));
+          }, 5000);
+        
+        
+          document.querySelectorAll('.js-messageClose').forEach(function(button) {
+            button.addEventListener('click', function(e) {
+              closeMessage(this.closest('.Message'));
+              clearTimeout(timerId);
+            });
+          });
+        
         
         const FillPagesNumbers= ()=>{
             fetch(` https://zakimohammad2-001-site1.etempurl.com/api/Content/PagesNumber?Tabel=6&PuplisherID=${IDtoken}&GategoreID=0`)

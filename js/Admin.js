@@ -232,6 +232,38 @@ const RenderGateogres=(TabelData)=>{
 
     document.addEventListener("DOMContentLoaded", function() {
         if (window.location.pathname === '/News/UpdateGategore.html') {
+            
+    function closeMessage(el) {
+        el.classList.add('is-hidden');
+      }
+      
+      
+      function openMessage(el) {
+            el.classList.remove('is-hidden');
+      
+            if (!el.classList.contains('Message--red')) 
+            {
+            clearTimeout(timerId);
+            timerId = setTimeout(function() {
+           closeMessage(el);
+            }, 5000);
+          }
+      }
+      
+    
+    
+    timerId = setTimeout(function() {
+        closeMessage(document.getElementById('js-timer'));
+      }, 5000);
+    
+    
+      document.querySelectorAll('.js-messageClose').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+          closeMessage(this.closest('.Message'));
+          clearTimeout(timerId);
+        });
+      });
+    
 
   let ID = new URLSearchParams(window.location.search).get('id');
 
@@ -316,6 +348,38 @@ const RenderGateogres=(TabelData)=>{
 
     document.addEventListener("DOMContentLoaded", function() {
         if (window.location.pathname === '/News/UpdateSocialmedia.html') {
+            
+    function closeMessage(el) {
+        el.classList.add('is-hidden');
+      }
+      
+      
+      function openMessage(el) {
+            el.classList.remove('is-hidden');
+      
+            if (!el.classList.contains('Message--red')) 
+            {
+            clearTimeout(timerId);
+            timerId = setTimeout(function() {
+           closeMessage(el);
+            }, 5000);
+          }
+      }
+      
+    
+    
+    timerId = setTimeout(function() {
+        closeMessage(document.getElementById('js-timer'));
+      }, 5000);
+    
+    
+      document.querySelectorAll('.js-messageClose').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+          closeMessage(this.closest('.Message'));
+          clearTimeout(timerId);
+        });
+      });
+    
   
   let ID = new URLSearchParams(window.location.search).get('id');
 
@@ -391,6 +455,37 @@ const RenderGateogres=(TabelData)=>{
     document.addEventListener("DOMContentLoaded", function() {
         if (window.location.pathname === '/News/AddAdmin.html') {
          
+    function closeMessage(el) {
+        el.classList.add('is-hidden');
+      }
+      
+      
+      function openMessage(el) {
+            el.classList.remove('is-hidden');
+      
+            if (!el.classList.contains('Message--red')) 
+            {
+            clearTimeout(timerId);
+            timerId = setTimeout(function() {
+           closeMessage(el);
+            }, 5000);
+          }
+      }
+      
+    
+    
+    timerId = setTimeout(function() {
+        closeMessage(document.getElementById('js-timer'));
+      }, 5000);
+    
+    
+      document.querySelectorAll('.js-messageClose').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+          closeMessage(this.closest('.Message'));
+          clearTimeout(timerId);
+        });
+      });
+    
   
             const AddAdminForm= document.querySelector('.AddAdminForm');
 
@@ -445,6 +540,38 @@ const RenderGateogres=(TabelData)=>{
     document.addEventListener("DOMContentLoaded", function() {
         if (window.location.pathname === '/News/UpdateAdmin.html') {
        
+            
+    function closeMessage(el) {
+        el.classList.add('is-hidden');
+      }
+      
+      
+      function openMessage(el) {
+            el.classList.remove('is-hidden');
+      
+            if (!el.classList.contains('Message--red')) 
+            {
+            clearTimeout(timerId);
+            timerId = setTimeout(function() {
+           closeMessage(el);
+            }, 5000);
+          }
+      }
+      
+    
+    
+    timerId = setTimeout(function() {
+        closeMessage(document.getElementById('js-timer'));
+      }, 5000);
+    
+    
+      document.querySelectorAll('.js-messageClose').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+          closeMessage(this.closest('.Message'));
+          clearTimeout(timerId);
+        });
+      });
+    
   
             document.getElementById('btnDeleteAdminAccount').addEventListener('click', function(event) {
                 event.preventDefault();
@@ -577,6 +704,37 @@ const RenderGateogres=(TabelData)=>{
             let AdminPagesNumber=1;
             let PuplisherPagesNumber=1;
 
+            function closeMessage(el) {
+                el.classList.add('is-hidden');
+              }
+              
+              
+              function openMessage(el) {
+                    el.classList.remove('is-hidden');
+              
+                    if (!el.classList.contains('Message--red')) 
+                    {
+                    clearTimeout(timerId);
+                    timerId = setTimeout(function() {
+                   closeMessage(el);
+                    }, 5000);
+                  }
+              }
+              
+            
+            
+            timerId = setTimeout(function() {
+                closeMessage(document.getElementById('js-timer'));
+              }, 5000);
+            
+            
+              document.querySelectorAll('.js-messageClose').forEach(function(button) {
+                button.addEventListener('click', function(e) {
+                  closeMessage(this.closest('.Message'));
+                  clearTimeout(timerId);
+                });
+              });
+            
             
 
             const FillPagesNumbers= ()=>{

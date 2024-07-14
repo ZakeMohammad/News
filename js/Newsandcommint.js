@@ -447,7 +447,7 @@ document.getElementById('NextNews').addEventListener('click',function(){
 
 
 
-    if(window.location.pathname==='/Commints.html'){
+    if(window.location.pathname==='/News/Commints.html'){
 
 
     let TabelCommints=document.querySelector('.accordion-flush');
@@ -535,7 +535,6 @@ fetch(` https://zakimohammad2-001-site1.etempurl.com/api/Subscriber/PageNumber?P
        
     });
 
-   // https://zakimohammad2-001-site1.etempurl.com/api/Adds/PageNumber1
 
     fetch(` https://zakimohammad2-001-site1.etempurl.com/api/Adds/PageNumber1`)
     .then(response => {
@@ -871,7 +870,7 @@ document.getElementById('confirmDeleteSubscriper').addEventListener('click', fun
 
     }
 
-  if(window.location.pathname==='/UpdateAdds.html'){
+  if(window.location.pathname==='/News/UpdateAdds.html'){
   
     const AddID = new URLSearchParams(window.location.search).get('id');
 

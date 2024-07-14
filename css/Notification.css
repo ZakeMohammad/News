@@ -1,0 +1,125 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+* {
+  box-sizing: border-box;
+}
+
+
+.Message {
+  display: table;
+  position: absolute;
+  margin: 40px auto ;
+  width:600px;
+  background-color: #0074D9;
+  color: #fff;
+  transition: 1.3s all linear;
+  right: 0;
+  bottom: 0;
+}
+.Message.is-hidden {
+    opacity: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0 auto;
+   visibility: hidden;
+}
+
+.Message--orange {
+  background-color: #F39C12;
+}
+
+.Message--red {
+  background-color: #FF4136;
+  text-align: center;
+  margin-top: 0;
+}
+
+.Message--green {
+  background-color: #2ECC40;
+}
+
+.Message-icon {
+  display: table-cell;
+  vertical-align: middle;
+  width: 60px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.Message-icon > i {
+  width: 20px;
+  font-size: 20px;
+}
+
+.Message-body {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px 20px 30px 10px;
+}
+.Message-body > p {
+  line-height: 1.2;
+  margin-top: 6px;
+}
+
+.Message a {
+  position: relative;
+  margin: 30px 5px -10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.Message a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.Message a:active {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px rgba(0, 0, 0, 0.4);
+  top: 3px;
+}
+
+.Message-close {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  right: 5px;
+  top: 5px;
+  opacity: 0;
+  cursor: pointer;
+}
+.Message:hover .Message-close {
+  opacity: 1;
+}
+.Message-close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.u-italic {
+  font-style: italic;
+  
+}
+
+@Media(max-width:767px){
+    .Message {
+            width: 100%;
+            top: 0;
+            margin-top: 70px;
+            z-index: 55;
+        }
+        .Message--red .Message-body{
+          display:inline-block;
+          vertical-align:auto;
+          padding: 20px 0px;
+         height: fit-content;
+        }
+}
+

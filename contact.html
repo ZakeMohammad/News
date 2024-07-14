@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Newsers - Free HTML Magazine Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Raleway:wght@100;600;800&amp;display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+            
+        .modalS {
+            display: none; 
+            position: fixed; 
+            z-index: 100; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+          }
+         
+          .modal-contentS {
+            background-color: #fefefe;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 65%; 
+          }
+        
+          .closeS {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+          
+          .closeS:hover,
+          .closeS:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+          }
+                </style>
+</head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+
+            <p style="display:none; width: 0px;" id="myBtn">Wrong</p>
+    
+            <div id="myModal2" class="modalS">
+              <div class="modal-contentS">
+                <span class="closeS">&times;</span>
+                <p id="MessegeForSubs">Email or password is wrong...</p>
+              </div>
+            </div>
+            <div class="container-fluid topbar bg-dark d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="topbar-top d-flex justify-content-between flex-lg-wrap">
+                        <div class="top-info flex-grow-0">
+                            <span class="rounded-circle btn-sm-square bg-primary me-2">
+                                <i class="fas fa-bolt text-white"></i>
+                            </span>
+                            <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
+                                <p class="mb-0 text-white fs-6 fw-normal">Trending</p>
+                            </div>
+                            <div class="overflow-hidden" style="width: 735px;">
+                                <div id="note" class="ps-2 Tranding">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-link flex-lg-wrap">
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span class="text-body CurrentDate">Tuesday, Sep 12, 2024</span></i>
+                            <div class="d-flex icon SoicalMedia">
+                                <p class="mb-0 text-white me-2">Follow Us:</p>
+                                <a  target="_blank" href="" class="me-2 Fasbook"><i class="fab fa-facebook-f text-body link-hover "></i></a>
+                                <a target="_blank" href="" class="me-2 Twitter"><i class="fab fa-twitter text-body link-hover "></i></a>
+                                <a target="_blank" href="" class="me-2 Instegram"><i class="fab fa-instagram text-body link-hover"></i></a>
+                                <a target="_blank" href="" class="me-2 Youtube"><i class="fab fa-youtube text-body link-hover "></i></a>
+                                <a target="_blank" href="" class="me-2 Linkdin"><i class="fab fa-linkedin-in text-body link-hover "></i></a>
+                                <a target="_blank" href="" class="me-2 Skype"><i class="fab fa-skype text-body link-hover "></i></a>
+                                <a target="_blank" href="" class="me-2 Pintrest"><i class="fab fa-pinterest-p text-body link-hover"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand mt-3">
+                            <p class="text-primary display-6 mb-2" style="line-height: 0;">Next Gen News</p>
+                            <small class="text-body fw-normal" style="letter-spacing: 12px;">Puplish Daily</small>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top justify-content-between">
+                                <a href="index.html" class="nav-item nav-link active" style="color: rgb(4, 4, 4);">Home</a>
+                                <a href="contact.html" class="nav-item nav-link" style="color: rgb(4, 4, 4);">Contact Us</a>
+                            </div>
+                            <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
+                                <div class="d-flex">
+                                    <img loading="lazy" src="img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
+                                    <div class="d-flex align-items-center">
+                                        <strong class="fs-4 text-secondary CurrentTemperature"></strong>
+                                        <div class="d-flex flex-column ms-2" style="width: 150px;">
+                                            <span class="text-body CurrentCity"></span>
+                                            <small class="CurrentDate"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                               
+                                <button class=" btn border border-primary btn-md-square rounded-circle bg-white my-auto"> <a href="signin.html"><i class="fas fa-sign-out-alt text-primary"></i></a></button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+    
+
+
+        <!-- Contact Us Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="bg-light rounded p-5">
+                    <div class="row g-4">
+                        <div class="col-lg-5">
+                            <div class="">
+                                <h1 class="mb-4">General Customer Care & Technical Support</h1>
+                                <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                                <div class="rounded">
+                                    <iframe class="rounded w-100" 
+                                    style="height: 425px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <form action="" class="mb-4">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="w-100 form-control border-0 py-3" name="name" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" class="w-100 form-control border-0 py-3" name="email" placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="w-100 form-control border-0 py-3" name="phone" placeholder="Enter Your Phone">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="w-100 form-control border-0 py-3" name="subject" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="w-100 form-control border-0" rows="6" cols="10" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="w-100 btn btn-primary form-control py-3" type="submit">Submit Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row g-4">
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Address</h4>
+                                            <p class="mb-0">Amman , Jordan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Mail Us</h4>
+                                            <p class="mb-0">zakemohammad222@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Telephone</h4>
+                                            <p class="mb-0">+962 795 710 121</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="d-flex p-4 rounded bg-white">
+                                        <i class="fa fa-share-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Share</h4>
+                                            <div class="d-flex">
+                                                <a class="me-3 Twitter" href="" target="_blank"><i class="fab fa-twitter text-dark link-hover"></i></a>
+                                                <a class="me-3 Fasbook" href="" target="_blank"><i class="fab fa-facebook-f text-dark link-hover "></i></a>
+                                                <a class="me-3 Youtube" href="" target="_blank"><i class="fab fa-youtube text-dark link-hover"></i></a>
+                                                <a class="Linkdin" href="" target="_blank"><i class="fab fa-linkedin-in text-dark link-hover"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Us End -->
+        
+        
+       <!-- Footer Start -->
+    
+       <div class="container-fluid bg-dark footer py-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <a href="#" class="d-flex flex-column flex-wrap">
+                            <p class="text-white mb-0 display-6">Next Gen News</p>
+                            <small class="text-light" style="letter-spacing: 11px; line-height: 0;">Puplish Daily</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <form  class="d-flex position-relative rounded-pill overflow-hidden SubscribeForm">
+                            <input required class="form-control border-0 w-100 py-3 rounded-pill" type="email" id="email" placeholder="example@gmail.com">
+                            <input type="submit" class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute" style="top: 0; right: 0;" value="Subscribe Now">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-1">
+                        <h4 class="mb-4 text-white">Get In Touch</h4>
+                        <p class="text-secondary line-h">Address: <span class="text-white"> Amman , Jordan</span></p>
+                        <p class="text-secondary line-h">Email: <span class="text-white">zakemohammad222@gmail.com</span></p>
+                        <p class="text-secondary line-h">Phone: <span class="text-white">+962 795 710 121</span></p>
+                        <div class="d-flex line-h">
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle Twitter" href="" target="_blank"><i class="fab fa-twitter text-dark Twitter"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle Fasbook" href="" target="_blank"><i class="fab fa-facebook-f text-dark Fasbook"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle Youtube" href="" target="_blank"><i class="fab fa-youtube text-dark Youtube"></i></a>
+                            <a class="btn btn-light btn-md-square rounded-circle Linkdin" href="" target="_blank"><i class="fab fa-linkedin-in text-dark Linkdin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-2" id="FotterPost">
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="d-flex flex-column text-start footer-item-3">
+                        <h4 class="mb-4 text-white">Categories</h4>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Sports</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Technology</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Fashion</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Life style</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-4">
+                        <h4 class="mb-4 text-white">Our Gallary</h4>
+                        <div class="row g-2" id="GategorePhotots">
+                        
+                       </div>
+                        </div>
+                    </div>
+                </div>
+         </div>
+    </div>
+   
+   
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i> 2024 Next Gen News </a>, All right reserved.</span>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/Contact.js"></script>
+    </body>
+
+
+
+
+</html>

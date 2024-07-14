@@ -242,3 +242,75 @@ document.querySelector('.SubscribeForm').addEventListener('submit',function(even
     });
 });
 
+
+
+  
+  
+  document.getElementById('Talk').addEventListener('click', function() {
+   
+    var email = 'zakemohammad222@gmail.com';
+    var subject = '';
+    var body = 'Hello';
+  
+    var mailtoLink = 'mailto:' + email +
+                     '?subject=' + encodeURIComponent(subject) +
+                     '&body=' + encodeURIComponent(body);
+  
+    window.location.href = mailtoLink;
+  });
+  
+  
+  
+  
+  
+  
+  
+  document.getElementById('ThanksForThis').addEventListener('click', function() {
+   
+    Swal.fire({
+      title: "Success!",
+      text: "You made my day better with that kindness. Thank you so much!",
+      icon: "success"
+    });
+  });
+  
+
+  let form = document.querySelector('ContactForm');
+  
+  function sendEmail() {
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let phone = document.getElementById('phone').value;
+      let subject = document.getElementById('subject').value;
+      let message = document.getElementById('message').value;
+  
+      let bodymessage = `Full Name: ${name}<br> <br> Email: ${email} <br> Phone: ${phone} <br> Subject: ${subject} <br> Message: ${message}`;
+      console.log('Sending email:', bodymessage); 
+      Email.send({
+        SecureToken :"238f4840-15be-4db1-8ce5-1a9379331cc0",
+          To: 'zakemohammad222@gmail.com',
+          From: "zakemohammad222@gmail.com",
+          Subject: subject,
+          Body: bodymessage
+      }).then(
+          message => {
+            if(message=="OK"){
+              Swal.fire({
+                title: "Success!",
+                text: `Thank you ${name} for sending this message!
+                Developer: Zaki Mohammad.`,
+                icon: "success"
+              });
+            }
+          }
+      );
+  }
+  
+  
+  form.addEventListener("submit", (e) => {
+      e.preventDefault();
+     
+      sendEmail();
+  });
+  
+  

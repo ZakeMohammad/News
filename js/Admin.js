@@ -231,7 +231,7 @@ const RenderGateogres=(TabelData)=>{
     
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.pathname === '/UpdateGategore.html') {
+        if (window.location.pathname === '/News/UpdateGategore.html') {
 
   let ID = new URLSearchParams(window.location.search).get('id');
 
@@ -315,7 +315,7 @@ const RenderGateogres=(TabelData)=>{
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.pathname === '/UpdateSocialmedia.html') {
+        if (window.location.pathname === '/News/UpdateSocialmedia.html') {
   
   let ID = new URLSearchParams(window.location.search).get('id');
 
@@ -389,7 +389,7 @@ const RenderGateogres=(TabelData)=>{
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.pathname === '/AddAdmin.html') {
+        if (window.location.pathname === '/News/AddAdmin.html') {
          
   
             const AddAdminForm= document.querySelector('.AddAdminForm');
@@ -443,7 +443,7 @@ const RenderGateogres=(TabelData)=>{
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.pathname === '/UpdateAdmin.html') {
+        if (window.location.pathname === '/News/UpdateAdmin.html') {
        
   
             document.getElementById('btnDeleteAdminAccount').addEventListener('click', function(event) {
@@ -567,7 +567,7 @@ const RenderGateogres=(TabelData)=>{
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.pathname === '/Admins.html') {
+        if (window.location.pathname === '/News/Admins.html') {
             let TabelAdmins=document.querySelector('.AdminsTabel tbody');
             let TabelPuplishers=document.querySelector('.PuplishersTabel tbody');
             let AdminsContent='';

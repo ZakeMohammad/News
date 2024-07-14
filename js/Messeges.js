@@ -197,7 +197,7 @@ function responsiveChat(element) {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.pathname === '/MessegesPuplishers.html') {
+    if (window.location.pathname === '/News/MessegesPuplishers.html') {
 
         const urlParams = new URLSearchParams(window.location.search);
         const PuplisherID = urlParams.get('PuplisherID');
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.pathname === '/Messages.html') {
+    if (window.location.pathname === '/News/Messages.html') {
         
         const urlParams = new URLSearchParams(window.location.search);
         const PuplisherID = urlParams.get('PuplisherID');

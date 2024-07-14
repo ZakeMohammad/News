@@ -78,7 +78,7 @@ document.getElementById('myBtn').addEventListener('click',function(){
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.pathname === '/News.html') {
+    if (window.location.pathname === '/News/News.html') {
 
         let TabelNews=document.querySelector('.NewsTabel tbody');
         let TabelTranding=document.querySelector('.Tranding tbody');

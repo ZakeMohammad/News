@@ -83,7 +83,7 @@ document.getElementById('myBtn').addEventListener('click',function(){
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    if (window.location.pathname === '/IndexPuplisher.html') {
+    if (window.location.pathname === '/News/IndexPuplisher.html') {
 
         let TabelNews=document.querySelector('.NewsTabel tbody');
         let TabelTranding=document.querySelector('.Tranding tbody');
@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
 
-    if(window.location.pathname === '/UpdateNews.html') {
+    if(window.location.pathname === '/News/UpdateNews.html') {
         function closeMessage(el) {
             el.classList.add('is-hidden');
           }
@@ -541,7 +541,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
 
 
-                if(window.location.pathname==='/AddNews.html'){
+                if(window.location.pathname==='/News/AddNews.html'){
                     function closeMessage(el) {
                         el.classList.add('is-hidden');
                       }
@@ -639,7 +639,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-                if (window.location.pathname === '/UpdatePuplisher.html') {
+                if (window.location.pathname === '/News/UpdatePuplisher.html') {
        
                     function closeMessage(el) {
                         el.classList.add('is-hidden');
@@ -787,7 +787,7 @@ UpdateForm.addEventListener('submit',(event)=>{
 
 
                      
- if(window.location.pathname==='/AddTrandingNews.html'){
+ if(window.location.pathname==='/News/AddTrandingNews.html'){
     function closeMessage(el) {
         el.classList.add('is-hidden');
       }

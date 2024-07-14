@@ -582,7 +582,7 @@ Data.forEach(data=>{
                                                     <div class="text-center ">
                                                         <h6 class="mb-2">${data[3]}</h6>
                                                         <p class="text-dark mb-2"></p>
-                                                        <a target="_blank" href="${data[1]}}" class="btn btn-primary text-white px-4">Visit it</a>
+                                                        <a target="_blank" href="${data[1]}" class="btn btn-primary text-white px-4">Visit it</a>
                                                     </div>
                                                 </div>
     `;

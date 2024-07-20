@@ -143,7 +143,7 @@ const RenderTotals=(data)=>{
     document.getElementById('TotalViews').textContent = data.totalViews;
     document.getElementById('TotalNews').textContent = data.totalNews;
     document.getElementById('TotalSubscripers').textContent = data.totalSubscribers;
-    document.getElementById('TotalVisits').textContent = data.totalVisists;
+
     document.getElementById('SportRate').textContent = `${(data.sprotViewsRatio * 100)}%`;
     document.getElementById('TechRate').textContent = `${(data.technologeViewsRatio * 100)}%`;
     document.getElementById('FashoiRate').textContent = `${(data.fashionViewsRatio * 100)}%`;
